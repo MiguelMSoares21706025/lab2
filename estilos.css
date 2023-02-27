@@ -1,0 +1,72 @@
+* {
+    /*universal*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    /*tipo*/
+    color: darkred
+}
+
+.specialHeader {
+    /*classe*/
+    color: darkgoldenrod;
+}
+
+footer {
+    background-color: black;
+}
+
+#unico {
+    /*ID*/
+    color: gold
+}
+
+a:link {
+    color: blue
+}
+
+a:visited {
+    color: gray
+}
+
+a:hover {
+    color: lightblue
+}
+
+a:active {
+    color: orange
+}
+
+a {
+    color: blue;
+}
+
+[target="blank_"] {
+    color: gray
+}
+
+
+
+#tabelas tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tabelas tr:hover {
+    background-color: #ddd;
+}
+
+p.intro::first-letter {
+    font-size: 200%;
+}
+
+div p {
+    background-color: yellow;
+}
+
+div > p {
+    background-color: lightblue;
+}
+div ~ p {
+    background-color: orange;
+  }

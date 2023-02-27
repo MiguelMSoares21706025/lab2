@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="PT">
+
 <head>
-    <title>Cancun</title>
-    <meta charset="utf-8">
-    <meta name="author" content="Miguel Soares">
-    <meta name="description" content="Website sobre Cancun">
-    <meta name="keywords" content="palavras chave">
+  <title>Cancun</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Miguel Soares">
+  <meta name="description" content="Website sobre Cancun">
+  <meta name="keywords" content="palavras chave">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
 </head>
 <style>
-    table, th, td {
-      border:1px solid black;
-    }
-    </style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  };
+
+</style>
+
 <body>
+  <header>
     <h1>Cancun</h1>
     <img src="images/cancun.jpg" alt="Cancun">
     <br>
+  </header>
+  <nav>
     <p>
-        <a href="index.html">Introdução</a></b>
-        <a href="local.html">Localização</a>
-        <a href="multimedia.html">Multimedia</a>
-        <a href="info.html"><b>Informação</b></a>
+      <a href="index.html"><span class="material-symbols-outlined">home</span>Introdução</a> |
+      <a href="local.html"><span class="material-symbols-outlined">map</span>Localização</a> |
+      <a href="multimedia.html"><span class="material-symbols-outlined">image</span>Multimedia</a> |
+      <a href="info.html"><span class="material-symbols-outlined">info</span><b>Informação</b></a> |
+      <a href="quizz.html"><span class="material-symbols-outlined">quiz</span>Quizz</a> |
+      <a href="html5-css.html"><span class="material-symbols-outlined">html</span>HTML5-CSS</a> |
+      <a href="https://cancun.gob.mx" target="blank_">Portal del Municipio</a>
+
     </p>
-    <h2>Informação</h2>
-    <p>Cancun ou Cancún é uma cidade que fica na costa do estado de Quintana Roo, no México, em uma península que se tornou um dos centros turísticos mais importantes do México, tendo conseguido preservar suas belezas naturais e sua cultura ancestral, representada principalmente em cidades maias, como Tulum, Uxmal ou Chichén Itzá, fundadas no período pré-colombiano.
-        O local foi especialmente projetado para ser um dos maiores pontos turísticos do México. Em razão disso, foram feitos grandes investimentos em infraestrutura e os hotéis da cidade são especialmente preparados para receber turistas de todo o mundo.
-        Em Cancun existem cerca de 22 quilômetros de praias de areia fina, divididos entre a lagoa e o mar. As ruínas, as praias, a vegetação, os parques cheios de espetáculos de entretenimento, o clima, a fauna marinha e a estrutura hoteleira fazem de Cancun um dos destinos turísticos mais visitados do México.</p>
-    <p><b>Top 10 de coisas para fazer em Cancun</b></p>
-    <p><table>
+  </nav>
+  <main>
+    <section>
+      <h2>Informação</h2>
+      <div>
+        <p class="intro">Cancun ou Cancún é uma cidade fundada a 20 de Abril de 1970, que fica na costa do estado de
+          Quintana Roo, no México, em uma península que se tornou um dos centros turísticos mais importantes do México, tendo conseguido preservar suas belezas naturais
+          e sua cultura ancestral, representada principalmente em cidades maias, como Tulum, Uxmal ou Chichén Itzá,
+          fundadas no período pré-colombiano.</p>
+        </div>
+        <p>O local foi especialmente projetado para ser um dos maiores pontos turísticos do México. Em razão disso,
+          foram
+          feitos grandes investimentos em infraestrutura e os hotéis da cidade são especialmente preparados para receber
+          turistas de todo o mundo.
+          Em Cancun existem cerca de 22 quilômetros de praias de areia fina, divididos entre a lagoa e o mar. As ruínas,
+          as praias, a vegetação, os parques cheios de espetáculos de entretenimento, o clima, a fauna marinha e a
+          estrutura hoteleira fazem de Cancun um dos destinos turísticos mais visitados do México.</p>
+        <div>
+          <section>
+          <p><u>Polpulação total</u>: 628.306 hab.</p>
+          <p><u>Fuso horário</u>: -6h.</p>
+          <p><u>Código postal</u>: 77500–77539</p></br>
+        </section>
+      </div>
+    </section>
+    <section>
+      <h3>Top 10 de coisas para fazer em Cancun</h3>
+      <p>
+      <table>
         <tr>
           <td>#1</td>
           <td>Explore a zona de hoteis de Cancun</td>
@@ -39,45 +80,54 @@
           <td><img src="images/cancunDowntown.jpg" alt="Zona centro de Cancun"><br></td>
         </tr>
         <tr>
-            <td>#3</td>
-            <td>Vá nadar em cenotes</td>
-            <td><img src="images/cenote.jpg" alt="Cenote"><br></td>
-          </tr>
-          <tr>
-            <td>#4</td>
-            <td>Vá velejar ao pôr do sol</td>
-            <td><img src="images/sailingSunset.jpg" alt="Veleiro ao por do sol"><br></td>
-          </tr>
-          <tr>
-            <td>#5</td>
-            <td>Participe numa cerimónia Temazcal</td>
-            <td><img src="images/Temazcal.jpg" alt="xamã de cerimónia Temazcal"><br></td>
-          </tr>
-          <tr>
-            <td>#6</td>
-            <td>Visite as melhores praias de Cancun</td>
-            <td><img src="images/praia.jpg" alt="praia"><br></td>
-          </tr>
-          <tr>
-            <td>#7</td>
-            <td>Experimente um passeio zipeline pela selva</td>
-            <td><img src="images/zipline.jpg" alt="passeio em zipline"><br></td>
-          </tr>
-          <tr>
-            <td>#8</td>
-            <td>Visite as ruinas Maias de Chichén Itzá</td>
-            <td><img src="images/chichenItza.jpg" alt="Chichén Itzá"><br></td>
-          </tr>
-          <tr>
-            <td>#9</td>
-            <td>Um volta na torre Escénica</td>
-            <td><img src="images/torreEscenica.jpg" alt="Torre Escénica"><br></td>
-          </tr>
-          <tr>
-            <td>#10</td>
-            <td>Fazer compras no mercado 28</td>
-            <td><img src="images/mercado28.jpg" alt="Mercado 28"><br></td>
-          </tr>
-      </table></p>
+          <td>#3</td>
+          <td>Vá nadar em cenotes</td>
+          <td><img src="images/cenote.jpg" alt="Cenote"><br></td>
+        </tr>
+        <tr>
+          <td>#4</td>
+          <td>Vá velejar ao pôr do sol</td>
+          <td><img src="images/sailingSunset.jpg" alt="Veleiro ao por do sol"><br></td>
+        </tr>
+        <tr>
+          <td>#5</td>
+          <td>Participe numa cerimónia Temazcal</td>
+          <td><img src="images/Temazcal.jpg" alt="xamã de cerimónia Temazcal"><br></td>
+        </tr>
+        <tr>
+          <td>#6</td>
+          <td>Visite as melhores praias de Cancun</td>
+          <td><img src="images/praia.jpg" alt="praia"><br></td>
+        </tr>
+        <tr>
+          <td>#7</td>
+          <td>Experimente um passeio zipeline pela selva</td>
+          <td><img src="images/zipline.jpg" alt="passeio em zipline"><br></td>
+        </tr>
+        <tr>
+          <td>#8</td>
+          <td>Visite as ruinas Maias de Chichén Itzá</td>
+          <td><img src="images/chichenItza.jpg" alt="Chichén Itzá"><br></td>
+        </tr>
+        <tr>
+          <td>#9</td>
+          <td>Um volta na torre Escénica</td>
+          <td><img src="images/torreEscenica.jpg" alt="Torre Escénica"><br></td>
+        </tr>
+        <tr>
+          <td>#10</td>
+          <td>Fazer compras no mercado 28</td>
+          <td><img src="images/mercado28.jpg" alt="Mercado 28"><br></td>
+        </tr>
+      </table>
+      </p>
+    </section>
+
+  </main>
+  <footer>
+    <p id="unico">Miguel Soares | 21706025 | Universidade Lusófona | 2023</p>
+  </footer>
+
 </body>
+
 </html>

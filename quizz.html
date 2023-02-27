@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+    <title>Cancun</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Miguel Soares">
+    <meta name="description" content="Website sobre Cancun">
+    <meta name="keywords" content="palavras chave">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>Cancun</h1>
+        <img src="images/cancun.jpg" alt="Cancun">
+        <br>
+    </header>
+    <nav>
+        <p>
+            <a href="index.html"><span class="material-symbols-outlined">home</span>Introdução</a> |
+            <a href="local.html"><span class="material-symbols-outlined">map</span>Localização</a> |
+            <a href="multimedia.html"><span class="material-symbols-outlined">image</span>Multimedia</a> |
+            <a href="info.html"><span class="material-symbols-outlined">info</span>Informação</a> |
+            <a href="quizz.html"><span class="material-symbols-outlined">quiz</span><b>Quizz</b></a> |
+            <a href="html5-css.html"><span class="material-symbols-outlined">html</span>HTML5-CSS</a> |
+            <a href="https://cancun.gob.mx" target="blank_">Portal del Municipio</a>
+
+        </p>
+    </nav>
+    <main>
+        <section>
+            <h2>Quizz</h2>
+            <fieldset>
+                <legend>
+                    <h3>Quizz sobre Cancun</h3>
+                </legend>
+                <form>
+                    <fieldset>
+                        <legend class="specialHeader"><b>Info</b></legend>
+                        <label for="fname">Nome:</label></br>
+                        <input type="text" id="fname" name="fname" value="Manuel" autofocus required><br><br>
+                        <label for="lname">Apelido:</label></br>
+                        <input type="text" id="lname" name="lname" value="Silva"><br><br>
+                        <label for="email">Email:</label></br>
+                        <input type="email" id="email" name="email" placeholder="insira o seu email" required
+                            autocomplete="on"><br><br>
+                    </fieldset></br>
+                    <fieldset>
+                        <legend class="specialHeader"><b>Perguntas</b></legend>
+                        <label for="cancun_país">Em que país fica Cancun?</label></br>
+                        <input type="radio" id="Brasil" name="cancun_país" value="Brasil">
+                        <label for="Brasil">Brasil</label>
+                        <input type="radio" id="México" name="cancun_país" value="México">
+                        <label for="México">México</label>
+                        <input type="radio" id="Equador" name="cancun_país" value="Equador">
+                        <label for="Equador">Equador</label></br></br>
+                        <label for="cancun_estado">Em que estado mexicano se encontra Cancún?</label></br>
+                        <input type="text" id="cancun_estado" name="cancun_estado" maxlength="20"><br><br>
+                        <label for="cancun_fundacao_date">Em que data foi fundada a cidade de Cancun?</label></br>
+                        <input type="date" id="cancun_fundacao_date" name="cancun_fundacao_date" min="1900-01-01"
+                            max="1999-12-31"><br><br>
+                        <label for="cancun_arqueologia">Indique que locais arqueológicos podem ser visitados na Riviera
+                            Maia? (Pode selecionar mais que uma opção.)</label></br>
+                        <input type="checkbox" id="site1" name="site1" value="Tulum">
+                        <label for="site1"> Tulum</label><br>
+                        <input type="checkbox" id="site2" name="site2" value="Uxmal">
+                        <label for="site2"> Uxmal</label><br>
+                        <input type="checkbox" id="site3" name="site3" value="Machu Piccchu">
+                        <label for="site3"> Machu Piccchu</label><br>
+                        <input type="checkbox" id="site4" name="site4" value="Chichén Itzá">
+                        <label for="site4"> Chichén Itzá</label><br><br>
+                        <label for="Cancun_codPostal">Qual o código postal de Cancun?</label></br>
+                        <input type="text" id="Cancun_codPostal" name="Cancun_codPostal" pattern="[0-9]{5}-[0-9]{5}"
+                            title="código de 10 digitos, separados por 1 traço" placeholder="12345-12345"><br><br>
+                        <label for="cancun_populacao">Qual a população total de Cancun?</label></br>
+                        <input type="number" id="cancun_populacao" name="cancun_populacao" min="0"
+                            max="1000000"></br></br>
+                        <label for="visit_places">Selecione 3 coisas que pode fazer ou visitar em Cancun:</label></br>
+                        <select name="visit_places" id="visit_places" multiple>
+                            <option value="nadar em cenotes">Nadar em cenotes</option>
+                            <option value="cerimónia Temazcal">Cerimónia Temazcal</option>
+                            <option value="ruinas maias">Ruinas Maias</option>
+                            <option value="torre de belém">Torre de Belém</option>
+                        </select><br><br>
+                        <label for="cor_bandeira">Quais as 3 cores da bandeira do México?</label></br>
+                        <input type="color" id="cor1" name="cor1" value="#ffffff">
+                        <input type="color" id="cor2" name="cor2" value="#ffffff">
+                        <input type="color" id="cor3" name="cor3" value="#ffffff"></br></br>
+                        <label for="grau_interesse">Indique qual o seu grau de interesse em visitar Cancun: (1=Baixo;
+                            5=Elevado)</label></br>
+                        <input type="range" value="1" min="1" max="5" list="number" />
+                        <datalist id="number">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </datalist></br></br>
+                        <label for="cancun_frase">O que gostaria mais de visitar se viajasse até Cancun?</label></br>
+                        <textarea name="message" rows="5" cols="50">Escreva aqui o seu texto.</textarea><br><br>
+                    </fieldset></br>
+                    clique para submeter as suas respostas!</br>
+                    <input type="image" id="image" alt="Submit" value="Submit" src="images/botao_submeter.jpg"></br>
+            </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p id="unico">Miguel Soares | 21706025 | Universidade Lusófona | 2023</p>
+    </footer>
+</body>
+
+</html>

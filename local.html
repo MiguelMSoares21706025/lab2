@@ -1,25 +1,73 @@
 <!DOCTYPE html>
 <html lang="PT">
+
 <head>
     <title>Cancun</title>
     <meta charset="utf-8">
     <meta name="author" content="Miguel Soares">
     <meta name="description" content="Website sobre Cancun">
     <meta name="keywords" content="palavras chave">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
-    <h1>Cancun</h1>
-    <img src="images/cancun.jpg" alt="Cancun">
-    <br>
-    <p>
-        <a href="index.html">Introdução</a></b>
-        <a href="local.html"><b>Localização</b></a>
-        <a href="multimedia.html">Multimedia</a>
-        <a href="info.html">Informação</a>
-    </p>
-    <h2>Localização</h2>
-    <p>Cancun ou Cancún é uma cidade que fica na costa do estado de Quintana Roo, no México</p>
-    <p>coordenadas: <a href="https://geohack.toolforge.org/geohack.php?pagename=Canc%C3%BAn&params=21_09_38_N_86_50_51_W_scale:100000">21° 09' 38" N 86° 50' 51" O</a></p>
-    <p><iframe width="560" height="420" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119096.87389713482!2d-86.99275728819308!3d21.121442621369813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b05aef653db%3A0xce32b73c625fcd8a!2sCanc%C3%BAn%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2spt!4v1676732937045!5m2!1sen!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    <header>
+        <h1>Cancun</h1>
+        <img src="images/cancun.jpg" alt="Cancun">
+        <br>
+    </header>
+    <nav>
+        <p>
+            <a href="index.html"><span class="material-symbols-outlined">home</span>Introdução</a> |
+            <a href="local.html"><b><span class="material-symbols-outlined">map</span>Localização</b></a> |
+            <a href="multimedia.html"><span class="material-symbols-outlined">image</span>Multimedia</a> |
+            <a href="info.html"><span class="material-symbols-outlined">info</span>Informação</a> |
+            <a href="quizz.html"><span class="material-symbols-outlined">quiz</span>Quizz</a> |
+            <a href="html5-css.html"><span class="material-symbols-outlined">html</span>HTML5-CSS</a> |
+            <a href="https://cancun.gob.mx" target="blank_">Portal del Municipio</a>
+
+        </p>
+    </nav>
+    <main>
+        <section>
+            <h2>Localização</h2>
+            <p class="intro">Cancun ou Cancún é uma cidade que fica na costa do estado de Quintana Roo, no México</p>
+
+            <p>coordenadas: <a
+                    href="https://geohack.toolforge.org/geohack.php?pagename=Canc%C3%BAn&params=21_09_38_N_86_50_51_W_scale:100000">21°
+                    09' 38" N 86° 50' 51" O</a></p>
+
+            <figure>
+                <p><iframe width="560" height="420"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119096.87389713482!2d-86.99275728819308!3d21.121442621369813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b05aef653db%3A0xce32b73c625fcd8a!2sCanc%C3%BAn%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2spt!4v1676732937045!5m2!1sen!2spt"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                <figcaption>
+                    <details>
+                        <summary>Mapa de Cancun</summary>
+                        <p>Localiza-se a uma distância de uns 370 km da capital do estado Quintana Roo, a cidade de
+                            Chetumal; a 70 km de Playa del Carmen. Limita a leste com o Mar do Caribe, ao norte com o
+                            município de Isla Mujeres, ao oeste com o município de Lázaro Cárdenas, e ao sul com o
+                            município de Solidaridad. A extensão do município Benito Juárez é de 1664 km² e conta com 22
+                            km de costa.</p>
+                        <p>Cancun está localizada ao noroeste da Península de Yucatán, e pela costa se pode observar
+                            claramente Isla Mujeres, posicionada ao leste, a 7 km de distância na chamada Bahía de
+                            Mujeres, zona que cruzam diversos barcos e lanchas que transportam todo o dia os moradores
+                            da ilha até a parte continental.</p>
+                    </details>
+                </figcaption>
+        </section>
+        </figure>
+    </main>
+    <footer>
+        <p id="unico">Miguel Soares | 21706025 | Universidade Lusófona | 2023</p>
+    </footer>
 </body>
+
 </html>
