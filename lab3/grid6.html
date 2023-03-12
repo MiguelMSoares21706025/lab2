@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+  <title>Laboratório 3</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Miguel Soares">
+  <meta name="description" content="Lab 3: Layouts baseados em flex e grid">
+  <meta name="keywords" content="palavras chave">
+
+</head>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  header {  grid-area: header; background-image: url(images/b-166561.jpg);background-size:cover}
+menu {  grid-area: menu;background-image: url(images/b-122028.jpg);background-size:cover}
+main {  grid-area: main;background-image: url(images/b-129851.jpg);background-size:cover}
+B1 {  grid-area:B1;background-image: url(images/b-59570_1.jpg);}
+B2 {  grid-area: B2; background-image: url(images/confused_me_Smile_1.jpg);background-size:cover}
+footer {  grid-area: footer;background-image: url(images/footer.png);background-size:cover}
+
+  .grid-container {
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    padding: 5px;
+    background-color: purple;
+
+    grid-template-areas:
+      "B2 header header"
+      "B2 menu menu"
+      "main main B1"
+      "main main  B1"
+      "footer footer footer ";
+
+    grid-template-columns: 15% 4fr 1fr;
+    grid-template-rows: 10% 10% 50vh 200px;
+  }
+
+  .grid-container>* {
+    background-color: white;
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+    font-size: 2vw;
+  }
+</style>
+
+<body>
+  <div class="grid-container">
+    <header>
+      Header
+    </header>
+    <menu>
+      <nav>
+        Menu
+        <p><a href="/lab3/index.html">Pág.Original</a>
+          <a href="/lab3/grid1.html">L1</a>  
+          <a href="/lab3/grid2.html">L2</a>  
+          <a href="/lab3/grid3.html">L3</a>  
+          <a href="/lab3/grid4.html">L4</a>  
+          <a href="/lab3/grid5.html">L5</a>  
+          <a href="/lab3/grid6.html">L6</a>
+        </p>
+      </nav>
+    </menu>
+    <main>
+      Main
+    </main>
+    <B1>
+      B1
+    </B1>
+    <B2>
+      B2
+    </B2>
+    <footer>
+    </footer>
+  </div>
+
+</body>
+
+
+</html>

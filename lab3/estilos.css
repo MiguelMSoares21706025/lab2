@@ -1,0 +1,243 @@
+* {
+    /*universal*/
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header { grid-area: header;}
+menu { grid-area: menu;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 80vw 20vw;
+    grid-template-rows: 10vh 1fr 5%;
+    grid-template-areas:
+        'header menu'
+        'main main'
+        'footer footer';
+    gap:0px;
+}
+.grid-container1 >div{
+    background-color: #888888;
+    opacity: 0.8;
+    text-align: center;
+  }
+
+
+.header-container {
+    position: sticky;
+    width: 80vw;
+    height: 10vh;
+    background: #E26310;
+    color: #96dfe4;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.layout-container {
+    position: sticky;
+    width: 20vw;
+    height: 10vh;
+    background: #E26310;
+    color: #96dfe4;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout-container nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #b3e6ea;
+}
+
+a:hover {
+    color: lightgray;
+    font-weight: bold
+}
+
+
+
+.slogan-container {
+    display: flex;
+    background-color: #96dfe4;
+    color: #E26310;
+    width: 100vw;
+    height: 50vh;
+    font-size: 3.5rem;
+    font-stretch: expanded;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.position-relative {
+    position: relative;
+
+}
+
+.img-slogan {
+    width: 100%;
+}
+
+.slogan {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+
+
+.capitais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: #eef8f8;
+    padding: 5px;
+
+}
+
+.capitais>div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #888888;
+    margin: 10px;
+}
+
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais div div:last-child {
+    width: 150px;
+    background-color: white;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulos {
+    box-sizing: content-box;
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #96dfe4;
+    margin-top: 10x;
+}
+
+.circulos>div {
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: black;
+    width: 120px;
+    height: 120px;
+    clip-path: circle(50% at 50% 50%);
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 1rem;
+    z-index: 1;
+}
+
+.circulos img {
+    display: flex;
+    justify-content: center;
+    clip: auto;
+    padding: 20px;
+}
+
+.circulos div div:last-child {
+    position: absolute;
+    color: #E26310;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-display: bold;
+    text-align: justify;
+    z-index: 3;
+}
+
+.circulos-inner {
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 1rem;
+    z-index: 2;
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 00,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.hide {
+    display: none;
+}
+
+.myDIV:hover+.hide {
+    display: block;
+}
+
+footer {
+    background-color: black;
+}
+
+#footer-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: black;
+    color: lightgrey;
+    padding: 10px;
+}
