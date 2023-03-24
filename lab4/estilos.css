@@ -6,7 +6,367 @@
     margin: 0;
 }
 
-h1 {
-    /*tipo*/
-    color: darkred
+menu {
+    grid-area: menu;
+    background-color: #1a2730;
+    position: sticky;
+    z-index: 2;
 }
+
+main {
+    grid-area: main;  
+    background-size: cover;
+    position: relative;
+    width: auto;
+    z-index: 1;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #1a2730;
+    z-index: 2;
+}
+
+left1{
+    grid-area: left1;  
+    background-size: cover;
+    background-color: whitesmoke;
+    position: relative;
+    width: auto;
+    z-index: 1;
+}
+left2{
+    grid-area: left2;  
+    background-size: cover;
+    background-color: whitesmoke;
+    position: relative;
+    width: auto;
+    z-index: 1;
+}
+right1{
+    grid-area: right1;  
+    background-size: cover;
+    background-color: whitesmoke;
+    position: relative;
+    width: auto;
+    z-index: 1;
+}
+right2{
+    grid-area: right2;  
+    background-size: cover;
+    background-color: whitesmoke;
+    position: relative;
+    width: auto;
+    z-index: 1;
+}
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    width: auto;
+    gap: 0px;
+    padding: 0px;
+    background-color: transparent;
+    grid-template-areas:
+        "menu"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 85% 0.2fr;
+}
+
+.grid-container>* {
+    background-size: cover;
+    opacity: 1;
+}
+
+.grid-container_anima {
+    display: grid;
+    height: auto;
+    width: auto;
+    gap: 2px;
+    padding: 0px;
+    background-color: #1a2730;
+    grid-template-areas:
+        "menu menu"
+        "left1 right1"
+        "left2 right2"
+        "footer footer";
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 45% 45% 2fr;
+}
+
+.grid-container_anima>* {
+
+    background-size: cover;
+    opacity: 1;
+}
+
+.menu-container {
+    color: whitesmoke;
+    font-size: 1.8rem;
+    top: 0;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+
+a:hover {
+    color: #6699CC;
+    font-weight: bold
+}
+
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 1.2rem;  
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+
+  
+  .dropdown-content {
+    display: none;
+    position:inherit;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: whitesmoke;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color: #c5962d;
+    font-weight: bold
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .main_background_Image {
+    background-image: url(images/Hero_paradise_akumal.webp);
+  }
+
+.motivational {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    color: whitesmoke;
+    top: 20vh;
+    left: 5vw;
+    padding: 20px;
+    font-size: 2.8rem;
+    
+}
+#footer-text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-items: space-around;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+div.parallax {
+   margin: 30px;
+
+}
+
+.parallax {
+  background-image: url(images/cancun.jpg);
+  opacity: 0.5;
+  min-height: 170px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url(images/HERO_Paradise-Beach_cancun.jpg);
+  min-height: 350px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px 30px 0px 30px;
+}
+
+.parallax3 {
+    background-image: url(images/ruinas_1.jpg);
+    min-height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 30px 0px 30px;
+  }
+  .parallax4 {
+    background-image: url(images/night_restaurant.jpg);
+    min-height: 800px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 30px 30px 30px;
+  }
+
+.title_cancun {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 3rem;
+    color: #c5962d;
+}
+
+.header3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-size: 1.8rem;
+    color: navy;
+}
+.texto {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px;
+ }
+ .texto1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    font-size:1rem;
+ }
+
+ #myVideo {
+    display:flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top:0;
+
+ }
+
+ .barraTexto_video {
+    position: fixed;
+    bottom: 70px;
+    background: rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+    width: 100%;
+    padding: 30px;
+    margin: 0px 0px 0px 0px;
+ }
+
+ .exemplo-anim1 {
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s, transform 2s;
+    background-image: url(images/free_icon_1.svg);
+    margin: 0px 0px 0px 30px;
+  }
+  
+.exemplo-anim1:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(-180deg);
+  }
+
+  .exemplo-anim2 {
+    width: 176px;
+    height: 176px;
+    background-image: url(images/deisi_logo.jpg);
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+    margin: 0px 0px 0px 30px;
+  }
+  
+.exemplo-anim2:hover {
+    width: 530px;
+  }
+
+ .exemplo-keframe1 {
+    width: 176px;
+    height: 176px;
+    transition-timing-function: ease-in-out;
+    margin: 0px 0px 0px 30px;
+    background-image: url(images/deisi_logo.jpg);
+    position: relative;
+    animation-name: deisi;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes deisi {
+    0%   { left:0px; top:0px;}
+    25%  { left:100px; top:0px;}
+    50%  {left:100px; top:100px;}
+    75%  { left:0px; top:100px;}
+    100% {left:0px; top:0px;}
+  }
+
+  .exemplo-keframe2 {
+    width: 100px;
+    height: 100px;
+    background-image: url(images/free_icon_1.svg);
+    margin: 0px 0px 0px 70%;
+    animation-name: roda;  
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  }
+  
+  @keyframes roda {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+  }
+
+  .exemplo-svg1 {
+    margin: 0px 0px 0px 30px;
+  }
+  .exemplo-svg2 {
+    margin: 0px 0px 0px 1px;
+  }
+
+ p.intro::first-letter {
+    font-size: 200%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+  
+  

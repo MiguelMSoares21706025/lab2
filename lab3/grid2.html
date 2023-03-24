@@ -2,84 +2,182 @@
 <html lang="PT">
 
 <head>
-    <title>Laboratório 3</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Miguel Soares">
-    <meta name="description" content="Lab 3: Layouts baseados em flex e grid">
-    <meta name="keywords" content="palavras chave">
+  <title>Laboratório 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Miguel Soares">
+  <meta name="description" content="Lab 3: Layouts baseados em flex e grid">
+  <meta name="keywords" content="palavras chave">
 
 </head>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
 
-header {  grid-area: header; background-image: url(images/b-166561.jpg);background-size:cover}
-menu {  grid-area: menu;background-image: url(images/b-122028.jpg);background-size:cover}
-main {  grid-area: main;background-image: url(images/b-129851.jpg);background-size:cover}
-B1 {  grid-area:B1;background-image: url(images/b-59570_1.jpg);background-size:cover}
-B2 {  grid-area: B2; background-image: url(images/confused_me_Smile_1.jpg);background-size:cover}
-footer {  grid-area: footer;background-image: url(images/footer.png);background-size:cover}
+  header {
+    grid-area: header;
+    background-image: url(images/b-166561.jpg);
+    background-size: cover
+  }
+
+  menu {
+    grid-area: menu;
+    background-image: url(images/b-122028.jpg);
+    background-size: cover
+  }
+
+  main {
+    grid-area: main;
+    background-image: url(images/b-129851.jpg);
+    background-size: cover
+  }
+
+  B1 {
+    grid-area: B1;
+    background-size: cover
+  }
+
+  B2 {
+    grid-area: B2;
+    background-image: url(images/confused_me_Smile_1.jpg);
+    background-size: cover
+  }
+
+  footer {
+    grid-area: footer;
+
+  }
+
+  #footer-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  .grid-container {
+    display: grid;
+    height: 100vh;
+    gap: 5px;
+    padding: 5px;
+    background-color: orange;
+
+    grid-template-areas:
+      "header header menu menu"
+      "main   main  main B1"
+      "footer footer footer footer";
+
+    grid-template-columns: 1fr 3fr 2fr 1.5fr;
+    grid-template-rows: 15% 1fr 100px;
+  }
+
+  h2 {
+    letter-spacing: 5px;
+  }
+
+  h3 {
+    letter-spacing: 7px;
+  }
+
+  h4 {
+    letter-spacing: 9px;
+  }
+
+  h5 {
+    letter-spacing: 11px;
+  }
+
+  h6 {
+    letter-spacing: 13px;
+  }
+
+  .grid-container>* {
+    background-color: white;
+    opacity: 0.8;
+    text-align: center;
+    padding: 5px;
+    font-size: 2vw;
+  }
 
 
-.grid-container {
-  display: grid;
-  height: 100vh;
-  gap: 5px;
-  padding: 5px;
-  background-color: orange;
+  @media(max-width:1270px) {
+    .grid-container {
+    grid-template-areas:
+      "header header menu menu"
+      "main   main  main main"
+      "B1 B1 B1 B1"
+      "footer footer footer footer";
+    grid-template-columns: 1fr 3fr 2fr 1.5fr;
+    grid-template-rows: 15% 1fr 0.5fr 100px;
+    }
+    .grid-container>* {
+    font-size: 2vw;
+  }
+  }
 
-  grid-template-areas:
-    "header header menu menu"
-    "main   main  main B1"
-    "footer footer footer footer";
+  @media(max-width:600px) {
+    .grid-container {
+      grid-template-areas:
+        "header"
+        "menu"
+        "main"
+        "B1"
+        "footer";
+      grid-template-columns: 1fr;
+      grid-template-rows: 9vw 20vw 0.8fr 0.5fr 100px;
+    }
+    .grid-container>* {
+    font-size: 3vw;
+  }
 
-  grid-template-columns: 1fr 3fr 2fr 1.5fr;
-  grid-template-rows:15% 1fr 100px;
-}
-
-.grid-container > * {
-  background-color: white;
-  opacity: 0.8;
-  text-align: center;
-  padding: 5px;
-  font-size: 2vw;
-}
-
+  }
 </style>
 
 <body>
   <div class="grid-container">
     <header>
-        Header
+      Header
     </header>
     <menu>
-        <nav>
-            Menu
-            <p>
-              <a href="/lab3/index.html">Pág.Original</a>  
-              <a href="/lab3/grid1.html">L1</a>  
-              <a href="/lab3/grid2.html">L2</a>  
-              <a href="/lab3/grid3.html">L3</a>  
-              <a href="/lab3/grid4.html">L4</a>  
-              <a href="/lab3/grid5.html">L5</a>  
-              <a href="/lab3/grid6.html">L6</a>
-            </p>
-        </nav>
+      <nav>
+        Menu
+        <p>
+          <a href="/lab4/index.html">Hero Page</a>
+          <a href="/lab3/grid1.html">L1</a>
+          <a href="/lab3/grid2.html">L2</a>
+          <a href="/lab3/grid3.html">L3</a>
+          <a href="/lab3/grid4.html">L4</a>
+          <a href="/lab3/grid5.html">L5</a>
+          <a href="/lab3/grid6.html">L6</a>
+        </p>
+      </nav>
     </menu>
     <main>
-        Main
+      Main
     </main>
     <B1>
-        B1
+      B1
+      </br></br>
+      <h1>Y</h1>
+      <h2>O U</h2>
+      <h3>S H O</h3>
+      <h4>U L D B</h4>
+      <h5>E W O R K</h5>
+      <h6>I N G N O W</h6>
     </B1>
     <footer>
+      <p id="footer-text">Miguel Soares | 21706025 | Universidade Lusófona | 2023</p>
     </footer>
-    </div>
-</div>
+  </div>
+  </div>
 </body>
 
 </html>

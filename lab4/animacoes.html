@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="PT">
+
+<head>
+  <title>Laboratório 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Miguel Soares">
+  <meta name="description" content="Lab 4: Web design responsivo">
+  <meta name="keywords" content="palavras chave">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="grid-container_anima">
+
+    <menu class="menu-container">
+      Animações
+      <nav>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Labs
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../index.html">Laboratório 2</a>
+            <a href="/lab3/index.html">Laboratório 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Layout Grids
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/lab3/grid1.html">L1</a>
+            <a href="/lab3/grid2.html">L2</a>
+            <a href="/lab3/grid3.html">L3</a>
+            <a href="/lab3/grid4.html">L4</a>
+            <a href="/lab3/grid5.html">L5</a>
+            <a href="/lab3/grid6.html">L6</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Other
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/lab4/index.html">Hero Page</a>
+            <a href="/lab4/parallax.html">Parallax</a>
+            <a href="/lab4/imagens_responsivas.html">Imag. responsivas</a>
+            <a href="/lab4/video.html">Video</a>
+            <a href="/lab4/animacoes.html">Animações</a>
+            <a href="/lab4/wordcloud.html">Wordcloud</a>
+          </div>
+      </nav>
+    </menu>
+
+    <left1>
+      <h3 class="header3">Transformações e transições</h3>
+      <div class="exemplo-anim1"></div>
+      </br></br></br>
+      <div class="exemplo-anim2"></div>
+      </left1>
+
+    <right1>
+      <h3 class="header3">Animações keyframes</h2>
+      <div class="exemplo-keframe1"></div>
+      <div class="exemplo-keframe2"></div>
+    </right1>
+
+    <left2>
+      <h3 class="header3">Desenho SVG</h3>
+      <svg class="exemplo-svg1" width="500" height="500">
+        <rect x="10" y="10" width="90" height="30">
+          <animate id="a1" attributeName="fill" from="blue" to="purple"  dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="10" y="50" width="90" height="30">
+          <animate id="a2" attributeName="fill" from="purple" to="red" begin="a1.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="10" y="90" width="90" height="30">
+          <animate id="a3" attributeName="fill" from="red" to="orange" begin="a2.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="10" y="130" width="90" height="30">
+          <animate id="a4" attributeName="fill" from="orange" to="yellow" begin="a3.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="10" y="170" width="90" height="30">
+          <animate id="a5" attributeName="fill" from="yellow" to="green" begin="a4.end" dur="0.2s" fill="freeze" />
+        </rect>
+
+        <rect x="110" y="10" width="90" height="30">
+          <animate id="a10" attributeName="fill" from="purple" to="blue"  begin="a9.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="110" y="50" width="90" height="30">
+          <animate id="a9" attributeName="fill" from="red" to="purple" begin="a8.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="110" y="90" width="90" height="30">
+          <animate id="a8" attributeName="fill" from="orange" to="red" begin="a7.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="110" y="130" width="90" height="30">
+          <animate id="a7" attributeName="fill" from="yellow" to="orange" begin="a6.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="110" y="170" width="90" height="30">
+          <animate id="a6" attributeName="fill" from="green" to="yellow" begin="a5.end" dur="0.2s" fill="freeze" />
+        </rect>
+
+        <rect x="210" y="10" width="90" height="30">
+          <animate id="a11" attributeName="fill" from="blue" to="purple"  begin="a10.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="210" y="50" width="90" height="30">
+          <animate id="a12" attributeName="fill" from="purple" to="red" begin="a11.end" dur="0.5s" fill="freeze" />
+        </rect>
+        <rect x="210" y="90" width="90" height="30">
+          <animate id="a13" attributeName="fill" from="red" to="orange" begin="a12.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="210" y="130" width="90" height="30">
+          <animate id="a14" attributeName="fill" from="orange" to="yellow" begin="a13.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="210" y="170" width="90" height="30">
+          <animate id="a15" attributeName="fill" from="yellow" to="green" begin="a14.end" dur="0.2s" fill="freeze" />
+        </rect>
+
+        <rect x="310" y="10" width="90" height="30">
+          <animate id="a20" attributeName="fill" from="purple" to="blue"  begin="a19.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="310" y="50" width="90" height="30">
+          <animate id="a19" attributeName="fill" from="red" to="purple" begin="a18.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="310" y="90" width="90" height="30">
+          <animate id="a18" attributeName="fill" from="orange" to="red" begin="a17.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="310" y="130" width="90" height="30">
+          <animate id="a17" attributeName="fill" from="yellow" to="orange" begin="a16.end" dur="0.2s" fill="freeze" />
+        </rect>
+        <rect x="310" y="170" width="90" height="30">
+          <animate id="a16" attributeName="fill" from="green" to="yellow" begin="a15.end" dur="0.2s" fill="freeze" />
+        </rect>
+      </svg>
+    </left2>
+
+    <right2>
+      <h3 class="header3">Poema</h3>
+      <div class="texto1">
+        <p>Autor del poema: <i><b>Alberto Cortez</b></i></p></br>
+        <p>Monarca de la luz, el mar Caribe</br>
+            se despliega sensual sobre la arena,</br>
+            con su corte de azules me recibe</br>
+            para hablar en audiencia de mi pena.</p></br>
+            
+            <p>“No vale tu tristeza, me reclama,</br>
+                ante mi voluptuosa exuberancia”.</br>
+                Es que, verá majestad, cuando uno ama</br>
+                no puede soportar tanta abundancia</p></br>
+            
+            <p>a solas con el cuerpo y con el alma</br>
+                mientras el corazón en la distancia</br>
+                en un mar de ojos verdes se derrama.</p></br>
+            
+            <p>Estoy aquí por otra circunstancia,</br>
+                pero no estoy aquí, y ese es el drama.</br>
+                Suplico, majestad, su tolerancia.</p></br>
+      </div>
+    </right2>
+
+    <footer>
+      <p id="footer-text">Miguel Soares | 21706025 | Universidade Lusófona | 2023</p>
+    </footer>
+
+  </div>
+</body>
+
+</html>
